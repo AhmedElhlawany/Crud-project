@@ -1,3 +1,48 @@
+// JQUERY>>>
+function hideAllSections() {
+  $(".bestEmployee, .maleEmployees, .averageSalary, .inactiveEmployees, .codingEmployees, .totalSalary, .projectWithMinimumHours, .hireManager").fadeOut(0);
+}
+hideAllSections()
+$('.best-employy').on('click', function() {
+  hideAllSections();
+  $(".bestEmployee").fadeIn(1000);
+});
+
+$('.total-salary').on('click', function() {
+  hideAllSections();
+  $(".totalSalary").fadeIn(1000);
+});
+
+$('.manager').on('click', function() {
+  hideAllSections();
+  $(".hireManager").fadeIn(1000);
+});
+
+$('.coding').on('click', function() {
+  hideAllSections();
+  $(".codingEmployees").fadeIn(1000);
+});
+
+$('.male').on('click', function() {
+  hideAllSections();
+  $(".maleEmployees").fadeIn(1000);
+});
+
+$('.high-salary').on('click', function() {
+  hideAllSections();
+  $(".averageSalary").fadeIn(1000);
+});
+
+$('.inactive').on('click', function() {
+  hideAllSections();
+  $(".inactiveEmployees").fadeIn(1000);
+});
+
+
+
+
+
+
 // employees = JSON.parse(localStorage.getItem("employees"));
 
 // departments = JSON.parse(localStorage.getItem("departments")) ;
@@ -283,45 +328,6 @@ displayProjectWithMinimumHours();
 
 
 
-// JQUERY>>>
-function hideAllSections() {
-  $(".bestEmployee, .maleEmployees, .averageSalary, .inactiveEmployees, .codingEmployees, .totalSalary, .projectWithMinimumHours, .hireManager").fadeOut(0);
-}
-hideAllSections()
-$('.best-employy').on('click', function() {
-  hideAllSections();
-  $(".bestEmployee").fadeIn(1000);
-});
-
-$('.total-salary').on('click', function() {
-  hideAllSections();
-  $(".totalSalary").fadeIn(1000);
-});
-
-$('.manager').on('click', function() {
-  hideAllSections();
-  $(".hireManager").fadeIn(1000);
-});
-
-$('.coding').on('click', function() {
-  hideAllSections();
-  $(".codingEmployees").fadeIn(1000);
-});
-
-$('.male').on('click', function() {
-  hideAllSections();
-  $(".maleEmployees").fadeIn(1000);
-});
-
-$('.high-salary').on('click', function() {
-  hideAllSections();
-  $(".averageSalary").fadeIn(1000);
-});
-
-$('.inactive').on('click', function() {
-  hideAllSections();
-  $(".inactiveEmployees").fadeIn(1000);
-});
 
 
 
